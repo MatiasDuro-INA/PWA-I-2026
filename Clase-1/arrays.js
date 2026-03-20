@@ -128,7 +128,7 @@ let todosMenores = numeros.every(function(number){
 
 let nombre = "Educacion"
 
-console.log(nombre);
+// console.log(nombre);
 let split = nombre.split("")
 
 
@@ -140,7 +140,7 @@ let split = nombre.split("")
 
 let dadoVuelta = split.reverse()
 
-console.log(numeros);
+// console.log(numeros);
 // console.log(numeros.reverse());
 
 
@@ -150,9 +150,54 @@ let numerosUnidos = numeros.join("")
 
 let palabraUnida = dadoVuelta.join("")
 
-console.log("numerosUnidos: ", numerosUnidos);
+// console.log("numerosUnidos: ", numerosUnidos);
 
-console.log("palabraUnida: ", palabraUnida);
+// console.log("palabraUnida: ", palabraUnida);
+
+// Metodo Reduce:
+// utiliza un acumulador
+
+numeros = [ 2, 7, 14, 21, 18, 19, 1 ]
+
+
+let sumaTotal = numeros.reduce(function(acumulador, number){
+
+    return acumulador + number
+})
+
+console.log("suma total: ", sumaTotal);
+
+
+const alumnos = [
+    {
+        nombreMateria: "PWA",
+        cantidad: 3
+    },
+    {
+        nombreMateria: "Programacion 1",
+        cantidad: 8
+    },
+    {
+        nombreMateria: "Programacion 2",
+        cantidad: 5
+    }
+]
+
+let cantidadAlumnos = alumnos.reduce(function(accumulador, alumno){
+
+    // console.log("accumulador: ", accumulador);
+    
+
+    // console.log(alumno.cantidad);
+    
+    return accumulador + alumno.cantidad
+
+   
+}, 0)
+
+console.log(cantidadAlumnos);
+
+
 
 
 
