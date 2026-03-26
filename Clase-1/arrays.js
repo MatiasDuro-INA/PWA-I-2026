@@ -118,6 +118,8 @@ let todosMenores = numeros.every(function(number){
     return number > 2
 })
 
+let todosMenores2 = numeros.every((number) => number > 2)
+
 // console.log("todosMenores: ", todosMenores);
 
 
@@ -164,6 +166,8 @@ let sumaTotal = numeros.reduce(function(acumulador, number){
 
     return acumulador + number
 })
+
+let sumaTotal2 = numeros.reduce((acumulador, number) => acumulador + number)
 
 console.log("suma total: ", sumaTotal);
 
